@@ -16,11 +16,11 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Quick Links</h3>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                        <a href="{{route('about')}}" class="btn btn-link text-white-50 {{request()->is('about') ? 'active' : '' }}">About Us</a>
+                        <a href="{{route('contact')}}" class="btn btn-link text-white-50 {{request()->is('contact') ? 'active' : '' }}">Contact Us</a>
+                        <a href="{{route('service')}}" class="btn btn-link text-white-50 {{request()->is('service') ? 'active' : '' }}">Our Services</a>
+                        <a href="{{route('policy')}}" class="btn btn-link text-white-50 {{request()->is('policy') ? 'active' : '' }}">Privacy Policy</a>
+                        <a href="{{route('term')}}" class="btn btn-link text-white-50 {{request()->is('term') ? 'active' : '' }}">Terms & Condition</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Photo Gallery</h3>
@@ -66,10 +66,10 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                            <a href="{{route('home')}}" class="{{request()->is('home') ? 'active' : '' }}">Home</a>
+                            <a href="{{route('Cookies')}}" class="{{request()->is('Cookies') ? 'active' : '' }}">Cookies</a>
+                            <a href="{{route('help')}}" class="{{request()->is('help') ? 'active' : '' }}">Help</a>
+                            <a href="{{route('FQAs')}}" class="{{request()->is('FQAs') ? 'active' : '' }}">FQAs</a>
                             </div>
                         </div>
                     </div>
