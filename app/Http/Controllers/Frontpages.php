@@ -70,5 +70,13 @@ class Frontpages extends Controller
         $title2 = "Testimonial";
         return view('testimonial', compact('title', 'title2'));
     }
-    
+
+    public function main()
+    {
+        $title = "Kider Preschool Website";
+        return view('dashboard.layouts.main', compact('title'));
+
+    }
 }
+
+

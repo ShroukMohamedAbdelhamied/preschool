@@ -18,7 +18,7 @@
                         <h3 class="text-white mb-4">Quick Links</h3>
                         <a href="{{route('about')}}" class="btn btn-link text-white-50 {{request()->is('about') ? 'active' : '' }}">About Us</a>
                         <a href="{{route('contact')}}" class="btn btn-link text-white-50 {{request()->is('contact') ? 'active' : '' }}">Contact Us</a>
-                        <a href="{{route('service')}}" class="btn btn-link text-white-50 {{request()->is('service') ? 'active' : '' }}">Our Services</a>
+                        <a href="{{route('class')}}" class="btn btn-link text-white-50 {{request()->is('class') ? 'active' : '' }}">Our Services</a>
                         <a href="{{route('policy')}}" class="btn btn-link text-white-50 {{request()->is('policy') ? 'active' : '' }}">Privacy Policy</a>
                         <a href="{{route('term')}}" class="btn btn-link text-white-50 {{request()->is('term') ? 'active' : '' }}">Terms & Condition</a>
                     </div>
