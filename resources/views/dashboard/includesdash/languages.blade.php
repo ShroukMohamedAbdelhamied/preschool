@@ -1,5 +1,5 @@
 <div class="card-head-row card-tools-still-right">
-                      <h4 class="card-title">Users Geolocation</h4>
+                      <h4 class="card-title">Languages</h4>
                       <div class="card-tools">
                         <button
                           class="btn btn-icon btn-link btn-primary btn-xs"
@@ -20,8 +20,8 @@
                       </div>
                     </div>
 
-<p class="card-category">
-                      Map of the distribution of users around the world
+                    <p class="card-category">
+                    Different languages ​​for the Language & Speaking course
                     </p>
                   </div>
                   <div class="card-body">
@@ -39,9 +39,7 @@
                                     />
                                   </div>
                                 </td>
-                                <td>Indonesia</td>
-                                <td class="text-end">2.320</td>
-                                <td class="text-end">42.18%</td>
+                                <td>Indonesian</td>                            
                               </tr>
                               <tr>
                                 <td>
@@ -52,9 +50,7 @@
                                     />
                                   </div>
                                 </td>
-                                <td>USA</td>
-                                <td class="text-end">240</td>
-                                <td class="text-end">4.36%</td>
+                                <td>English</td>                              
                               </tr>
                               <tr>
                                 <td>
@@ -65,22 +61,7 @@
                                     />
                                   </div>
                                 </td>
-                                <td>Australia</td>
-                                <td class="text-end">119</td>
-                                <td class="text-end">2.16%</td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="flag">
-                                    <img
-                                      src="{{ asset('adminassets/img/flags/ru.png') }}"
-                                      alt="russia"
-                                    />
-                                  </div>
-                                </td>
-                                <td>Russia</td>
-                                <td class="text-end">1.081</td>
-                                <td class="text-end">19.65%</td>
+                                <td>Russian</td>
                               </tr>
                               <tr>
                                 <td>
@@ -91,9 +72,7 @@
                                     />
                                   </div>
                                 </td>
-                                <td>China</td>
-                                <td class="text-end">1.100</td>
-                                <td class="text-end">20%</td>
+                                <td>Chinese</td>
                               </tr>
                               <tr>
                                 <td>
@@ -104,9 +83,7 @@
                                     />
                                   </div>
                                 </td>
-                                <td>Brasil</td>
-                                <td class="text-end">640</td>
-                                <td class="text-end">11.63%</td>
+                                <td>Portuguese</td>
                               </tr>
                             </tbody>
                           </table>

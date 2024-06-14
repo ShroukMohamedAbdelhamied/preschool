@@ -4,7 +4,7 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
+            <a href="{{ route('main') }}" class="logo">
               <img
                 src="{{ asset('adminassets/img//kaiadmin/logo_light.svg') }}"
                 alt="navbar brand"
@@ -37,14 +37,14 @@
                   aria-expanded="false"
                 >
                   <i class="fas fa-home"></i>
-                  <p>Dashboard</p>
+                  <p>Kider</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="dashboard">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="../demo1/index.html">
-                        <span class="sub-item">Dashboard 1</span>
+                      <a href="{{ route ('home') }}">
+                        <span class="sub-item">Kider Site</span>
                       </a>
                     </li>
                   </ul>
@@ -54,59 +54,49 @@
                 <span class="sidebar-mini-icon">
                   <i class="fa fa-ellipsis-h"></i>
                 </span>
-                <h4 class="text-section">Components</h4>
+                <h4 class="text-section">Data Analysis</h4>
               </li>
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#base">
                   <i class="fas fa-layer-group"></i>
-                  <p>Base</p>
+                  <p>Classes</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
+                  <li>
+                      <a href="components/avatars.html">
+                        <span class="sub-item">Classes Table</span>
+                      </a>
+                    </li>
                     <li>
                       <a href="components/avatars.html">
-                        <span class="sub-item">Avatars</span>
+                        <span class="sub-item">Art & Drawing</span>
                       </a>
                     </li>
                     <li>
                       <a href="components/buttons.html">
-                        <span class="sub-item">Buttons</span>
+                        <span class="sub-item">Color Management</span>
                       </a>
                     </li>
                     <li>
                       <a href="components/gridsystem.html">
-                        <span class="sub-item">Grid System</span>
+                        <span class="sub-item">Athletic & Dance</span>
                       </a>
                     </li>
                     <li>
                       <a href="components/panels.html">
-                        <span class="sub-item">Panels</span>
+                        <span class="sub-item">Language & Speaking</span>
                       </a>
                     </li>
                     <li>
                       <a href="components/notifications.html">
-                        <span class="sub-item">Notifications</span>
+                        <span class="sub-item">Religion & History</span>
                       </a>
                     </li>
                     <li>
                       <a href="components/sweetalert.html">
-                        <span class="sub-item">Sweet Alert</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/font-awesome-icons.html">
-                        <span class="sub-item">Font Awesome Icons</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/simple-line-icons.html">
-                        <span class="sub-item">Simple Line Icons</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/typography.html">
-                        <span class="sub-item">Typography</span>
+                        <span class="sub-item">General Knowledge</span>
                       </a>
                     </li>
                   </ul>
@@ -115,19 +105,24 @@
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts">
                   <i class="fas fa-th-list"></i>
-                  <p>Sidebar Layouts</p>
+                  <p>Teachers</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="sidebar-style-2.html">
-                        <span class="sub-item">Sidebar Style 2</span>
+                        <span class="sub-item">Add Teacher</span>
                       </a>
                     </li>
                     <li>
                       <a href="icon-menu.html">
-                        <span class="sub-item">Icon Menu</span>
+                        <span class="sub-item">Candidate Teachers</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="sidebar-style-2.html">
+                        <span class="sub-item">Current Teachers</span>
                       </a>
                     </li>
                   </ul>
@@ -136,14 +131,24 @@
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#forms">
                   <i class="fas fa-pen-square"></i>
-                  <p>Forms</p>
+                  <p>Guardians</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="forms">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="forms/forms.html">
-                        <span class="sub-item">Basic Form</span>
+                        <span class="sub-item">Guardians Info</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="forms/forms.html">
+                        <span class="sub-item">Testimonials</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="forms/forms.html">
+                        <span class="sub-item">Recommendations</span>
                       </a>
                     </li>
                   </ul>
@@ -152,19 +157,14 @@
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#tables">
                   <i class="fas fa-table"></i>
-                  <p>Tables</p>
+                  <p>Kids</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="tables">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="tables/tables.html">
-                        <span class="sub-item">Basic Table</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="tables/datatables.html">
-                        <span class="sub-item">Datatables</span>
+                        <span class="sub-item">Kids Table</span>
                       </a>
                     </li>
                   </ul>
@@ -181,11 +181,6 @@
                     <li>
                       <a href="maps/googlemaps.html">
                         <span class="sub-item">Google Maps</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="maps/jsvectormap.html">
-                        <span class="sub-item">Jsvectormap</span>
                       </a>
                     </li>
                   </ul>
@@ -213,58 +208,32 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a href="widgets.html">
-                  <i class="fas fa-desktop"></i>
-                  <p>Widgets</p>
-                  <span class="badge badge-success">4</span>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#submenu">
                   <i class="fas fa-bars"></i>
-                  <p>Menu Levels</p>
+                  <p>Appointments</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="submenu">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a data-bs-toggle="collapse" href="#subnav1">
-                        <span class="sub-item">Level 1</span>
-                        <span class="caret"></span>
-                      </a>
                       <div class="collapse" id="subnav1">
                         <ul class="nav nav-collapse subnav">
-                          <li>
-                            <a href="#">
-                              <span class="sub-item">Level 2</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <span class="sub-item">Level 2</span>
-                            </a>
-                          </li>
                         </ul>
                       </div>
                     </li>
                     <li>
-                      <a data-bs-toggle="collapse" href="#subnav2">
-                        <span class="sub-item">Level 1</span>
-                        <span class="caret"></span>
+                      <a href="charts/sparkline.html">
+                        <span class="sub-item">Add Appointment</span>
                       </a>
-                      <div class="collapse" id="subnav2">
-                        <ul class="nav nav-collapse subnav">
-                          <li>
-                            <a href="#">
-                              <span class="sub-item">Level 2</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
                     </li>
                     <li>
-                      <a href="#">
-                        <span class="sub-item">Level 1</span>
+                      <a href="charts/sparkline.html">
+                        <span class="sub-item">Modify Appointment</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="charts/sparkline.html">
+                        <span class="sub-item">Cancel Appointment</span>
                       </a>
                     </li>
                   </ul>

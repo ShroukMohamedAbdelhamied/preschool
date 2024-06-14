@@ -3,7 +3,7 @@
                 <div class="card card-round">
                   <div class="card-body">
                     <div class="card-head-row card-tools-still-right">
-                      <div class="card-title">New Customers</div>
+                      <div class="card-title">Teachers</div>
                       <div class="card-tools">
                         <div class="dropdown">
                           <button
@@ -20,10 +20,10 @@
                             class="dropdown-menu"
                             aria-labelledby="dropdownMenuButton"
                           >
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Add Teacher</a>
+                            <a class="dropdown-item" href="#">Candidate Teachers</a>
                             <a class="dropdown-item" href="#"
-                              >Something else here</a
+                              >Current Teachers</a
                             >
                           </div>
                         </div>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="info-user ms-3">
                           <div class="username">Jimmy Denis</div>
-                          <div class="status">Graphic Designer</div>
+                          <div class="status">Art & Drawing</div>
                         </div>
                         <button class="btn btn-icon btn-link op-8 me-1">
                           <i class="far fa-envelope"></i>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="info-user ms-3">
                           <div class="username">Chandra Felix</div>
-                          <div class="status">Sales Promotion</div>
+                          <div class="status">Color Management</div>
                         </div>
                         <button class="btn btn-icon btn-link op-8 me-1">
                           <i class="far fa-envelope"></i>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="info-user ms-3">
                           <div class="username">Talha</div>
-                          <div class="status">Front End Designer</div>
+                          <div class="status">Athletic & Dance</div>
                         </div>
                         <button class="btn btn-icon btn-link op-8 me-1">
                           <i class="far fa-envelope"></i>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="info-user ms-3">
                           <div class="username">Chad</div>
-                          <div class="status">CEO Zeleaf</div>
+                          <div class="status">Language & Speaking</div>
                         </div>
                         <button class="btn btn-icon btn-link op-8 me-1">
                           <i class="far fa-envelope"></i>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="info-user ms-3">
                           <div class="username">Hizrian</div>
-                          <div class="status">Web Designer</div>
+                          <div class="status">Religion & History</div>
                         </div>
                         <button class="btn btn-icon btn-link op-8 me-1">
                           <i class="far fa-envelope"></i>
@@ -132,7 +132,7 @@
                         </div>
                         <div class="info-user ms-3">
                           <div class="username">Farrah</div>
-                          <div class="status">Marketing</div>
+                          <div class="status">General Knowledge</div>
                         </div>
                         <button class="btn btn-icon btn-link op-8 me-1">
                           <i class="far fa-envelope"></i>

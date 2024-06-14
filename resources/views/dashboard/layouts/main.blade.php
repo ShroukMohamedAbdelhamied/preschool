@@ -11,15 +11,15 @@
 
       @include('dashboard.includesdash.upDash')
 
-      @include('dashboard.includesdash.userStatistics')
+      @include('dashboard.includesdash.classesStatistics')
 
       @include('dashboard.includesdash.export')
 
       @include('dashboard.includesdash.students')
 
-      @include('dashboard.includesdash.usersgeolocation')
+      @include('dashboard.includesdash.languages')
 
-      @include('dashboard.includesdash.newCustomers')
+      @include('dashboard.includesdash.teachers')
 
       @include('dashboard.includesdash.transaction')
 

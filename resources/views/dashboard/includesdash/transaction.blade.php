@@ -2,7 +2,7 @@
                 <div class="card card-round">
                   <div class="card-header">
                     <div class="card-head-row card-tools-still-right">
-                      <div class="card-title">Transaction History</div>
+                      <div class="card-title">Teacher waiting list</div>
                       <div class="card-tools">
                         <div class="dropdown">
                           <button
@@ -19,10 +19,10 @@
                             class="dropdown-menu"
                             aria-labelledby="dropdownMenuButton"
                           >
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Add Appointment</a>
+                            <a class="dropdown-item" href="#">Modify Appointment</a>
                             <a class="dropdown-item" href="#"
-                              >Something else here</a
+                              >Cancel Appointment</a
                             >
                           </div>
                         </div>
@@ -35,9 +35,9 @@
                       <table class="table align-items-center mb-0">
                         <thead class="thead-light">
                           <tr>
-                            <th scope="col">Payment Number</th>
+                            <th scope="col">Teacher Name</th>
                             <th scope="col" class="text-end">Date & Time</th>
-                            <th scope="col" class="text-end">Amount</th>
+                            <th scope="col" class="text-end">Course</th>
                             <th scope="col" class="text-end">Status</th>
                           </tr>
                         </thead>
@@ -49,10 +49,85 @@
                               >
                                 <i class="fa fa-check"></i>
                               </button>
-                              Payment from #10231
+                              Doris Wilson
+                            </th>
+                            <td class="text-end">Mar 19, 2024, 12.45pm</td>
+                            <td class="text-end">Color Management</td>
+                            <td class="text-end">
+                              <span class="badge badge-success">Confirmed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <button
+                                class="btn btn-icon btn-round btn-success btn-sm me-2"
+                              >
+                                <i class="fa fa-check"></i>
+                              </button>
+                              Amy Smith
+                            </th>
+                            <td class="text-end">Mar 19, 2024, 1.45pm</td>
+                            <td class="text-end">Art & Drawing</td>
+                            <td class="text-end">
+                              <span class="badge badge-success">Postponed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <button
+                                class="btn btn-icon btn-round btn-success btn-sm me-2"
+                              >
+                                <i class="fa fa-check"></i>
+                              </button>
+                              Edna Francis
+                            </th>
+                            <td class="text-end">Mar 19, 2024, 2.45pm</td>
+                            <td class="text-end">Language & Speaking</td>
+                            <td class="text-end">
+                              <span class="badge badge-success">Canceled</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <button
+                                class="btn btn-icon btn-round btn-success btn-sm me-2"
+                              >
+                                <i class="fa fa-check"></i>
+                              </button>
+                              Sarah Norris
+                              </th>
+                            <td class="text-end">Mar 19, 2024, 3.45pm</td>
+                            <td class="text-end">Athletic & Dance</td>
+                            <td class="text-end">
+                              <span class="badge badge-success">Confirmed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <button
+                                class="btn btn-icon btn-round btn-success btn-sm me-2"
+                              >
+                                <i class="fa fa-check"></i>
+                              </button>
+                              Jennie Crigler
+                            </th>
+                            <td class="text-end">Mar 19, 2024, 4.45pm</td>
+                            <td class="text-end">General Knowledge</td>
+                            <td class="text-end">
+                              <span class="badge badge-success">Canceled</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <button
+                                class="btn btn-icon btn-round btn-success btn-sm me-2"
+                              >
+                                <i class="fa fa-check"></i>
+                              </button>
+                              Irene Ball
                             </th>
                             <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">$250.00</td>
+                            <td class="text-end">Color Management</td>
                             <td class="text-end">
                               <span class="badge badge-success">Completed</span>
                             </td>
@@ -64,87 +139,12 @@
                               >
                                 <i class="fa fa-check"></i>
                               </button>
-                              Payment from #10231
-                            </th>
-                            <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">$250.00</td>
+                              Ruth Carman
+                              </th>
+                            <td class="text-end">Mar 19, 2024, 3.45pm</td>
+                            <td class="text-end">Religion & History</td>
                             <td class="text-end">
-                              <span class="badge badge-success">Completed</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <button
-                                class="btn btn-icon btn-round btn-success btn-sm me-2"
-                              >
-                                <i class="fa fa-check"></i>
-                              </button>
-                              Payment from #10231
-                            </th>
-                            <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">$250.00</td>
-                            <td class="text-end">
-                              <span class="badge badge-success">Completed</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <button
-                                class="btn btn-icon btn-round btn-success btn-sm me-2"
-                              >
-                                <i class="fa fa-check"></i>
-                              </button>
-                              Payment from #10231
-                            </th>
-                            <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">$250.00</td>
-                            <td class="text-end">
-                              <span class="badge badge-success">Completed</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <button
-                                class="btn btn-icon btn-round btn-success btn-sm me-2"
-                              >
-                                <i class="fa fa-check"></i>
-                              </button>
-                              Payment from #10231
-                            </th>
-                            <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">$250.00</td>
-                            <td class="text-end">
-                              <span class="badge badge-success">Completed</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <button
-                                class="btn btn-icon btn-round btn-success btn-sm me-2"
-                              >
-                                <i class="fa fa-check"></i>
-                              </button>
-                              Payment from #10231
-                            </th>
-                            <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">$250.00</td>
-                            <td class="text-end">
-                              <span class="badge badge-success">Completed</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <button
-                                class="btn btn-icon btn-round btn-success btn-sm me-2"
-                              >
-                                <i class="fa fa-check"></i>
-                              </button>
-                              Payment from #10231
-                            </th>
-                            <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">$250.00</td>
-                            <td class="text-end">
-                              <span class="badge badge-success">Completed</span>
+                              <span class="badge badge-success">Postponed</span>
                             </td>
                           </tr>
                         </tbody>

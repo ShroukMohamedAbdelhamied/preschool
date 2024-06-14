@@ -34,7 +34,6 @@ Route::get('/FQAs',[Frontpages::class,'FQAs'])->name('FQAs');
 
 Route::prefix('dashboard')->group(function () {
 Route::get('/layouts', [Frontpages::class, 'main'])->name('main');
-
 });
 
 
