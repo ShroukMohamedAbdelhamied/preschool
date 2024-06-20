@@ -172,15 +172,20 @@
               </li>
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#maps">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Maps</p>
+                  <i class="fas fa-pen-square"></i>
+                  <p>Accounts Management</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="maps">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="maps/googlemaps.html">
-                        <span class="sub-item">Google Maps</span>
+                        <span class="sub-item">Login</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{ route ('join') }}">
+                        <span class="sub-item">Registration</span>
                       </a>
                     </li>
                   </ul>
@@ -236,6 +241,7 @@
                         <span class="sub-item">Cancel Appointment</span>
                       </a>
                     </li>
+                    
                   </ul>
                 </div>
               </li>

@@ -77,6 +77,13 @@ class Frontpages extends Controller
         return view('dashboard.layouts.main', compact('title'));
 
     }
+
+    public function join()
+    {
+        $title = "Registration";
+        return view('join', compact('title'));
+
+    }
 }
 
 
