@@ -8,7 +8,7 @@ class Frontpages extends Controller
 {
     public function home(){
         $title = "Kider Preschool Website";
-        return view('home', compact('title'));
+        return view ('home', compact('title'));
     }
 
     public function about(){
@@ -84,6 +84,13 @@ class Frontpages extends Controller
         return view('join', compact('title'));
 
     }
+  
+    public function course()
+    {
+        $title = "Classes";
+        return view('course', compact('title'));
+    }
+
 }
 
 

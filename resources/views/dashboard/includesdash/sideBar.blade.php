@@ -4,14 +4,9 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="{{ route('main') }}" class="logo">
-              <img
-                src="{{ asset('adminassets/img//kaiadmin/logo_light.svg') }}"
-                alt="navbar brand"
-                class="navbar-brand"
-                height="20"
-              />
-            </a>
+          <a href="{{ route('main') }}" class="fa fa-book-reader me-3 style=" color=": #274472; font-size: 2rem;" {{request()->is('main') ? 'active' : '' }}">
+            <span class="navbar-brand" style="color: #E8E8E8; font-size: 2rem;">Kideradmin</span>
+          </a>
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
                 <i class="gg-menu-right"></i>
@@ -32,19 +27,24 @@
               <li class="nav-item active">
                 <a
                   data-bs-toggle="collapse"
-                  href="#dashboard"
+                  href="{{ route('home') }}"
                   class="collapsed"
                   aria-expanded="false"
                 >
-                  <i class="fas fa-home"></i>
+                <i class="fas fa-home"></i>
                   <p>Kider</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="dashboard">
                   <ul class="nav nav-collapse">
+                  <li>
+                      <a href="components/avatars.html">
+                        <span class="sub-item">Art & Drawing</span>
+                      </a>
+                    </li>
                     <li>
                       <a href="{{ route ('home') }}">
-                        <span class="sub-item">Kider Site</span>
+                      <span class="fa fa-book-reader me-3" style="color: #ff8c00; font-size: 1.25rem;"> Kider Site</span>
                       </a>
                     </li>
                   </ul>
@@ -57,7 +57,7 @@
                 <h4 class="text-section">Data Analysis</h4>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#base">
+                <a data-bs-toggle="collapse" href="{{ route ('course') }}">
                   <i class="fas fa-layer-group"></i>
                   <p>Classes</p>
                   <span class="caret"></span>
@@ -65,8 +65,8 @@
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
                   <li>
-                      <a href="components/avatars.html">
-                        <span class="sub-item">Classes Table</span>
+                      <a href="{{ route ('course') }}">
+                        <span class="sub-item {{request()->is('course') ? 'active' : '' }}">Classes Table</span>
                       </a>
                     </li>
                     <li>
@@ -103,21 +103,26 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                <a data-bs-toggle="collapse" href="{{ route ('Teachers') }}">
                   <i class="fas fa-th-list"></i>
                   <p>Teachers</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
+                  <li>
+                      <a href="{{ route ('Teachers') }}">
+                        <span class="sub-item {{request()->is('Teachers') ? 'active' : ''}}">Teachers List</span> 
+                      </a>
+                    </li>
                     <li>
                       <a href="sidebar-style-2.html">
                         <span class="sub-item">Add Teacher</span>
                       </a>
                     </li>
                     <li>
-                      <a href="icon-menu.html">
-                        <span class="sub-item">Candidate Teachers</span>
+                      <a href="{{ route ('Teachers') }}">
+                        <span class="sub-item {{request()->is('Teachers') ? 'active' : ''}}">Candidate Teachers</span>
                       </a>
                     </li>
                     <li>

@@ -14,22 +14,22 @@
             <div class="page-header">
               <h3 class="fw-bold mb-3">Classes Tables</h3>
               <ul class="breadcrumbs mb-3">
-                <li class="nav-home {{request()->is('main') ? 'active' : '' }}">
-                  <a href="{{ route('main') }}">
+                <li class="nav-home">
+                  <a href="#">
                     <i class="icon-home"></i>
                   </a>
                 </li>
                 <li class="separator">
                   <i class="icon-arrow-right"></i>
                 </li>
-                <li class="nav-item {{request()->is('course') ? 'active' : '' }}">
-                  <a href="{{ route ('course') }}">Classes</a>
+                <li class="nav-item">
+                  <a href="#">Classes</a>
                 </li>
                 <li class="separator">
                   <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                  <a href="{{ route ('Teachers') }}">Teachers</a>
+                  <a href="#">Teachers</a>
                 </li>
               </ul>
             </div>
