@@ -27,8 +27,8 @@
                 <li class="separator">
                     <i class="icon-arrow-right"></i>
                 </li>
-                <li class="nav-item {{ request()->is('Teachers') ? 'active' : '' }}">
-                    <a href="{{ route('Teachers') }}">{{ $title }}</a>
+                <li class="nav-item {{ request()->is('teachers') ? 'active' : '' }}">
+                    <a href="{{ route('teachers') }}">{{ $title }}</a>
                 </li>
             </ul>
         </div>
@@ -72,7 +72,7 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <form action="{{ route('Teachers', $teacher->id) }}" method="POST">
+                                            <form action="{{ route('delTeacher', $teacher->id) }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this teacher?')">Delete</button>

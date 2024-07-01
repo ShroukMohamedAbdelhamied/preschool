@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Teacher;
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -15,14 +16,21 @@ class DashboardController extends Controller
 
     public function Teachers()
     {
-        $title = "Teachers Dashboard";
+        $title = "Teachers";
         $teachers = Teacher::all();
-        return view('Teachers', compact('title', 'teachers'));
+        return view('teachers', compact('title', 'teachers'));
     }
 
     public function create()
     {
-        $teachers = Teacher::all(); // Fetch all teachers
-        return view('Teachers', compact('teachers'));
+        $teachers = Teacher::all();
+        return view('teachers', compact('teachers'));
+    }
+
+    public function course()
+    {
+        $course = Course::all(); 
+        $title = "Classes";
+        return view('course', compact('title', 'course'));
     }
 }

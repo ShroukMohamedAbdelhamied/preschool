@@ -61,7 +61,7 @@ class TeacherController extends Controller
 
         $teacher->save();
 
-        return redirect()->route('Teachers')
+        return redirect()->route('teachers')
             ->with('success', 'Teacher created successfully');
     }
 
@@ -71,7 +71,7 @@ class TeacherController extends Controller
     public function show(string $id)
     {
         $teacher = Teacher::findOrFail($id);
-        return view('Teachers', compact('teacher'));
+        return view('teachers', compact('teacher'));
     }
 
     /**
@@ -80,7 +80,7 @@ class TeacherController extends Controller
     public function edit(string $id)
     {
         $teacher = Teacher::findOrFail($id);
-        return view('Teachers', compact('teacher'));
+        return view('teachers', compact('teacher'));
     }
 
     /**
@@ -113,25 +113,16 @@ class TeacherController extends Controller
 
         $teacher->save();
 
-        return redirect()->route('Teachers')
+        return redirect()->route('teachers')
             ->with('success', 'Teacher updated successfully');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+        public function destroy($id)
     {
         $teacher = Teacher::findOrFail($id);
-
-        // Delete associated image if exists
-        if ($teacher->teacherimage) {
-            Storage::disk('public')->delete($teacher->teacherimage);
-        }
-
         $teacher->delete();
 
-        return redirect()->route('Teachers')
+        return redirect()->route('teachers')
             ->with('success', 'Teacher deleted successfully');
     }
 }

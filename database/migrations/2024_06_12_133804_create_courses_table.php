@@ -21,6 +21,7 @@ return new class extends Migration
             $table->tinyInteger('childage');
             $table->time('time');
             $table->tinyInteger('Capacity');
+            $table->timestamp('deleted_at')->nullable();
             $table->timestamps();
         });
     }

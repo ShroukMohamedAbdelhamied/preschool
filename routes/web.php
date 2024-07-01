@@ -8,7 +8,6 @@ use App\Http\Controllers\TeacherController;
 Route::get('/', function () {
     return view('home');
 });
-
 Route::get('/main', [Frontpages::class, 'main'])->name('main');
 Route::get('/about', [Frontpages::class, 'about'])->name('about');
 Route::get('/class', [Frontpages::class, 'class'])->name('class');
@@ -27,21 +26,22 @@ Route::get('/Cookies', [Frontpages::class, 'Cookies'])->name('Cookies');
 Route::get('/help', [Frontpages::class, 'help'])->name('help');
 Route::get('/FQAs', [Frontpages::class, 'FQAs'])->name('FQAs');
 
-// Define your 'course' route here
 Route::get('/course', [Frontpages::class, 'course'])->name('course');
 
    Route::prefix('dashboard')->group(function () {
-      Route::get('/layouts', [Frontpages::class, 'main'])->name('dashboard.layouts');
-      Route::get('/course', [Frontpages::class, 'course'])->name('dashboard.course');
-    Route::get('/Teachers', [DashboardController::class, 'Teachers'])->name('dashboard.teachers.index');
-    Route::post('/addTeacher', [TeacherController::class, 'store'])->name('dashboard.teachers.store');
-    Route::get('/addTeacher', [TeacherController::class, 'create'])->name('dashboard.teachers.create');
-    Route::get('/Teachers/{id}', [TeacherController::class, 'show'])->name('dashboard.teachers.show');
-    Route::get('/Teachers/{id}/edit', [TeacherController::class, 'edit'])->name('dashboard.teachers.edit');
-    Route::put('/Teachers/{id}', [TeacherController::class, 'update'])->name('dashboard.teachers.update');
-    Route::delete('/Teachers/{id}', [TeacherController::class, 'destroy'])->name('dashboard.teachers.destroy');
+    Route::get('/layouts', [Frontpages::class, 'main'])->name('dashboard.layouts');
+    Route::get('/course', [Frontpages::class, 'course'])->name('dashboard.course');
+    Route::get('/teachers', [DashboardController::class, 'teachers'])->name('teachers');
+    Route::post('/addTeacher', [TeacherController::class, 'store'])->name('addTeacher');
+    Route::get('/addTeacher', [TeacherController::class, 'create'])->name('addTeacher');
+    //Route::get('/teachers/{id}', [TeacherController::class, 'show'])->name('dashboard.teachers.show');
+    //Route::get('/teachers/{id}/edit', [TeacherController::class, 'edit'])->name('dashboard.teachers.edit');
+    //Route::put('/teachers/{id}', [TeacherController::class, 'update'])->name('dashboard.teachers.update');
+    Route::delete('/delTeacher/{id}', [TeacherController::class, 'destroy'])->name('delTeacher');
+    Route::get('/course', [DashboardController::class, 'course'])->name('course');
+
 });
 
-Auth::routes();
+Auth::routes(['verify'=>true]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

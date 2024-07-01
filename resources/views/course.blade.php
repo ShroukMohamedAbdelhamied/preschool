@@ -29,7 +29,7 @@
                   <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                  <a href="{{ route ('Teachers') }}">Teachers</a>
+                  <a href="{{ route ('teachers') }}">Teachers</a>
                 </li>
               </ul>
             </div>

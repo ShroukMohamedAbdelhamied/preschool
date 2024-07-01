@@ -25,8 +25,8 @@
                 <li class="separator">
                     <i class="icon-arrow-right"></i>
                 </li>
-                <li class="nav-item {{ request()->is('Teachers') ? 'active' : '' }}">
-                    <a href="{{ route('Teachers') }}">Teachers</a>
+                <li class="nav-item {{ request()->is('teachers') ? 'active' : '' }}">
+                    <a href="{{ route('teachers') }}">Teachers</a>
                 </li>
             </ul>
         </div>

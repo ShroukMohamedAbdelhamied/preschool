@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('childname', 100);
             $table->tinyInteger('age');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
